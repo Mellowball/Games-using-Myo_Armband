@@ -1,6 +1,6 @@
-# Myo 암밴드를 이용한 게임 프로그램
+# Mini Game using Myo Armband
 
-## 사용기술
+## Technology Used
 ---
 + <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white"/> - Interface with Myo Armband, Raspberry Pi
 + <img src ="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> - Raspberry Pi Programming Language
