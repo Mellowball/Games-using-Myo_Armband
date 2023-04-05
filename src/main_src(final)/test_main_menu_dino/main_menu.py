@@ -20,7 +20,7 @@ def readthread(ser):
     for c in ser.read():
         # line 변수에 차곡차곡 추가하여 넣는다.
         line += (chr(c))
-        if line.startswith('[') and line.endswith(']'):  # 라인의 끝을 만나면..
+        if line.startswith('[') and line.endswith(']'):  # 라인의 끝을 만나면
             # 데이터 처리 함수로 호출
             print('receive data=' + line)
             receivenumber = int(line[1:2])
@@ -34,7 +34,6 @@ def doThread():
 
 def do0():
     receivenumber = 0
-    #print('receivenum0 =', receivenumber)
 
 pygame.init()
 
@@ -55,7 +54,6 @@ def rsp():
     global isActive
         
     def eventProcess():
-        # 혹여나 마이오 수신했을 때 제대로 동작 안 하면 여기서 receivenum 선언
         global isActive, choiceUser, choiceCom, result
         
         MENU_MOUSE_POS = pygame.mouse.get_pos()
@@ -92,10 +90,6 @@ def rsp():
                 result, choiceUser, choiceCom = -1, -1, -1
         # 데이터 수신
         if receivenumber > 0:
-            # if receivenumber == 5:      # 나가기(Double Tap)
-            #     do0()
-            #     isActive = False
-            #     main_menu()
             if result == -1:
                 if receivenumber == 2:  # 가위(Wave In)
                     choiceUser = 0
@@ -197,8 +191,6 @@ def rsp():
     yellow = (255,255,0)
     green = (0,255,0)
 
-    # 시리얼 읽을 쓰레드 생성
-
     ##pygmae init
     pygame.init()
     SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -287,7 +279,7 @@ def dinosaur():
             if self.step_index >= 10:
                 self.step_index = 0
 
-            # 공룡 조작 키, 마이오 번호 집어넣으면 될듯 
+            # 공룡 조작 키
             if receivenumber == 3 or userInput[pygame.K_UP] and not self.dino_jump:
                 print(self.dino_jump)
                 print("jump")
@@ -368,7 +360,6 @@ def dinosaur():
         def __init__(self, image):
             self.type = random.randint(0, 2)
             super().__init__(image, self.type)
-            # self.rect.y = 325
             self.rect.y = 360
 
 
@@ -376,7 +367,6 @@ def dinosaur():
         def __init__(self, image):
             self.type = random.randint(0, 2)
             super().__init__(image, self.type)
-            # self.rect.y = 300
             self.rect.y = 350
 
 
@@ -440,16 +430,11 @@ def dinosaur():
                     ser.close()
                     pygame.quit()
                     sys.exit()
-                # ESC 눌렀을 때(마이오 추가?)
+                # ESC 눌렀을 때
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         run = False
                         menu(death_count)
-            
-            # if receivenumber == 5:
-            #     do0()
-            #     run = False
-            #     menu(death_count)
 
             SCREEN.fill((255, 255, 255))
             userInput = pygame.key.get_pressed()
@@ -488,9 +473,6 @@ def dinosaur():
 
     def menu(death_count):
         global points
-
-        # QUIT_BUTTON = Button(image=pygame.image.load("assets/Myo Reset.png"), pos=(display_weight/2 + 300, 350), 
-        #                     text_input="Quit", font=get_font(40), base_color="#FF0000", hovering_color="White")
         run = True
         while run:
 
@@ -524,7 +506,7 @@ def dinosaur():
                     ser.close()
                     pygame.quit()
                     sys.exit()
-                # 게임시작 키 입력, ESC = 나가기(마이오 추가?)
+                # 게임시작 키 입력, ESC = 나가기
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         main_menu()
@@ -535,28 +517,17 @@ def dinosaur():
                         isActive = False
                         main_menu()
                     main()
-            # if receivenumber == 5:
-            #     do0()
-            #     main_menu() 
         
             do0() # 초기화     
             pygame.display.update()
 
     menu(death_count=0)
 
-# def myo_reset():
-#     sendnum = '<1>'
-#     sendnum = sendnum.encode('utf-8')
-#     ser.write(sendnum)
-#     print("Arduino Reset")
-#     time.sleep(1)
-#     main_menu()
-
 
 def main_menu():
     while True:
-        doThread() # 초기화화 초기화
-        do0() # 초기화 초기화화
+        doThread()
+        do0()
 
         SCREEN = pygame.display.set_mode((display_weight, display_height))
         SCREEN.blit(BG, (0, 0))
@@ -571,8 +542,6 @@ def main_menu():
                             text_input="Jumping Dino", font=get_font(30), base_color="#d7fcd4", hovering_color="White")
         QUIT_BUTTON = Button(image=pygame.image.load("assets/Quit Rect.png"), pos=(display_weight/2, 350), 
                             text_input="QUIT", font=get_font(30), base_color="#d7fcd4", hovering_color="White")
-        # MyoReset_BUTTON = Button(image=pygame.image.load("assets/Myo Reset.png"), pos=(display_weight/2 + 300, 350), 
-        #                     text_input="Myo Reset", font=get_font(18), base_color="#FF0000", hovering_color="White")
 
         SCREEN.blit(MENU_TEXT, MENU_RECT)
 
@@ -594,8 +563,6 @@ def main_menu():
                     ser.close()
                     pygame.quit()
                     sys.exit()
-                # if MyoReset_BUTTON.checkForInput(MENU_MOUSE_POS):
-                #     myo_reset()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     ser.close()
