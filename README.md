@@ -4,7 +4,7 @@
 |인원|역할|
 |---|---|
 |김도훈|Raspberry Pi 세팅, Python 프로그램, Arduino 펌웨어|
-|장상균|Myo Armband 및 Bluetooth 모듈 세팅, Arduino 펌웨어|
+|장상균|Myo Armband 및 Bluetooth 모듈 세팅, 하드웨어 제작, Arduino 펌웨어|
 
 ## 사용 기술
 ---
