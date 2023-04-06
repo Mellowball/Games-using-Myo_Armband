@@ -1,10 +1,10 @@
 # Mini Game using Myo Armband
-
-## 진행 기간 및 참여 인원
+## 진행 기간 : 2022년 6월 24일 ~ 12월 24일
+## 참여 인원
 |인원|역할|
 |---|---|
-|김도훈|라즈베리 파이 세팅, Python 프로그램, 아두이노 펌웨어|
-|장상균|Myo 암밴드 및 블루투스 모듈 세팅, 아두이노 펌웨어|
+|김도훈|Raspberry Pi 세팅, Python 프로그램, Arduino 펌웨어|
+|장상균|Myo Armband 및 Bluetooth 모듈 세팅, Arduino 펌웨어|
 
 ## 사용 기술
 ---
