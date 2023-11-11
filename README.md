@@ -23,8 +23,45 @@
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
-### 1.
-+ <img src ="https://github.com/Mellowball/Voice-guidance-for-apartment-announcements/blob/main/Readme/admin-1.png"/>
+### 0. Index
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/0-index.png"/>
+
+### 1. 전체 구조
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/1-1.png"/>
+
+### 2. 구조도 설명
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/2-1.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/2-2.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/2-3.png"/>
+
+### 3. 하드웨어 설명
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/3-1.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/3-2.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/3-3.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/3-4.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/3-5.png"/>
+
+### 4. 데이터 처리 과정
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/4-1.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/4-2.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/4-3.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/4-4.png"/>
+
+### 5. 게임 프로그램
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/5-1.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/5-2.png"/>
+
++ <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/5-3.png"/>
 
 </details>
   
