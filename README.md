@@ -19,9 +19,7 @@
 + 스크린 터치와 Myo Armband의 동작을 통해 게임 플레이
 
 ---
-<details>
-<summary><b>핵심 기능 설명 펼치기</b></summary>
-<div markdown="1">
+## 핵심 기능 설명
 
 ### 0. Index
 + <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/0-index.png"/>
@@ -67,5 +65,5 @@
 <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/bluetooth_connect.gif"/>
 <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/rsp_game.gif"/>
 <img src ="https://github.com/Mellowball/Games-using-Myo_Armband/blob/main/img_Readme/dino_game.gif"/>
-</details>
+
   
